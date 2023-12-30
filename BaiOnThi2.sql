@@ -88,7 +88,7 @@ EXEC DSNhanVienMuc2 N'Kỹ thuật' -- không tìm thấy
 EXEC DSNhanVienMuc2 NULL -- null
 GO
 
--- Câu 3: 
+-- Câu 3: Thêm phòng ban mức 1 và 2
 -- Mức 1:
 CREATE PROC ThemPhongBanMuc1
 @MaPB nvarchar(10), @TenPB nvarchar(50), @ChiNhanh nvarchar(50)
@@ -160,7 +160,7 @@ DELETE FROM dbo.PB1 WHERE MaPB = 'PB07'
 DELETE FROM dbo.PB2 WHERE MaPB = 'PB08'
 GO
 
--- Câu 4:
+-- Câu 4: Sửa phòng ban mức 1 và 2
 -- Mức 1:
 CREATE PROC SuaPhongBanMuc1
 @MaPB nvarchar(10), @TenPB nvarchar(50), @ChiNhanh nvarchar(50)
