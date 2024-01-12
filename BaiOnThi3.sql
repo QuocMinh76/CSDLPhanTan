@@ -54,10 +54,6 @@ BEGIN
 END
 GO
 
-SELECT s.*, n.TenNXB
-FROM dbo.NhaXuatBan n, dbo.Sach s
-WHERE n.MaNXB = s.MaNXB AND TenNXB = N'Mỹ thuật'
-
 -- Test proc
 EXEC DSSachMuc1 NULL -- null
 EXEC DSSachMuc1 N'Tuổi hoa' -- k có
